@@ -30,5 +30,26 @@ computer_choice = random.choice(valid_options)
 print("COMPUTER_CHOICE:", computer_choice)
 
 
+# Determine the winner between user and computer choices
+# Rock beats scissors, paper beats rock, scissors beat paper, same choice results in tie
+if user_choice == computer_choice:
+    print("It's a tie!")
+elif user_choice == "rock":
+    if (computer_choice == "paper"):
+        print("Computer wins!", computer_choice, "beats", user_choice)
+    elif (computer_choice == "scissors"):
+        print("You win!", user_choice, "beats", computer_choice)
+elif user_choice == "paper":
+    if (computer_choice == "scissors"):
+        print("Computer wins!", computer_choice, "beats", user_choice)
+    elif (computer_choice == "rock"):
+        print("You win!", user_choice, "beats", computer_choice)
+elif user_choice == "scissors":
+    if (computer_choice == "rock"):
+        print("Computer wins!", computer_choice, "beats", user_choice)
+    elif (computer_choice == "paper"):
+        print("You win!", user_choice, "beats", computer_choice)
+else:
+    print("Oops! There was an error. Please try again.")
 
 print("This is the end of our game. Please play again!")
