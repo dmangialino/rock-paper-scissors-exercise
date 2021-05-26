@@ -26,7 +26,7 @@ After activating the virtual environment, run the below pip command to install p
 
     pip install -r requirements.txt
 
-In the root directory of your local repository, create a new file called ".env", and update the contents of the ".env" file to specify your desired username:
+To customize your username, create a new file called ".env" in the root directory of your repository. Update the contents of the ".env" file with the bleow, specifying your desired username within the double quotes:
 
     USER_NAME="Add Username Here"
 
