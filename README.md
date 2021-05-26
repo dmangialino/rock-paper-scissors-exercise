@@ -30,6 +30,8 @@ To customize your username, create a new file called ".env" in the root director
 
     USER_NAME="Add Username Here"
 
+Be sure to save the .env file after updating the username.
+
 
 ## Usage
 
