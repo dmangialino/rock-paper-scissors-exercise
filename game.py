@@ -1,9 +1,14 @@
+# Import os to get username from .env file
 # Load random module for use in simulating computer selection in the game
 import random
+import os
+from dotenv import load_dotenv
 
-player = "Player One"
+load_dotenv()
+
+USER_NAME = os.getenv("USER_NAME", default="Player One")
 print("---------------------")
-print("Welcome '", player, "' to Rock, Paper, Scissors, Shoot!")
+print("Welcome '", USER_NAME, "' to Rock, Paper, Scissors, Shoot!")
 print("---------------------")
 
 # Prompt user to enter a chocice, i.e., rock, paper, or scissors and store it in
