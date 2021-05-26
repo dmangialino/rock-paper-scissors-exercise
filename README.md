@@ -21,6 +21,7 @@ Use Anaconda to create and activate a new virtual environment, perhaps called "m
 
 Note that the conda create... command will only need to be run the first time you are creating your environment variable in which to run the game.
 
+
 After activating the virtual environment, run the below pip command to install packages dependencies ( identified in the requiremetns.txt file):
 
     pip install -r requirements.txt
