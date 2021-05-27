@@ -1,25 +1,25 @@
 # Import os to get username from .env file
-# Load random module for use in simulating computer selection in the game
+# Import random module for use in simulating computer selection in the game
 import random
 import os
 from dotenv import load_dotenv
 
 load_dotenv()
 
+# Get player's username from .env file
 USER_NAME = os.getenv("USER_NAME", default="Player One")
 print("---------------------")
 print("Welcome '", USER_NAME, "' to Rock, Paper, Scissors, Shoot!")
 print("---------------------")
 
-# Prompt user to enter a chocice, i.e., rock, paper, or scissors and store it in
-# ...user_choice variable
+# Prompt user to enter a chocice, i.e., rock, paper, or scissors and store it in user_choice variable
 user_choice = input("Please choose one of 'rock', 'paper', 'scissors': ")
 print("You chose:", user_choice)
 
 
 # Validate that the user inputted a valid choice (i.e., rock, paper, or scissors)
-# ...if the input is valid, will continue with the rest of the program
-# ...if selection is invalid, will notify user of invalid input and exit the program
+#   ...if the input is valid, will continue with the rest of the program
+#   ...if selection is invalid, will notify user of invalid input and exit the program
 if (user_choice == "rock") or (user_choice == "paper") or (user_choice == "scissors"):
     print("---------------------")
 else:
